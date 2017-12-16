@@ -18,7 +18,7 @@ Initial setup
 
 3. Add the following line to `/etc/fstab`:
 ```
-# echo "132.239.144.57:/Volumes/LaCie/ResearchData /ResearchData  nfs     rw,intr,exec    0       0" >> /etc/fstab
+# echo "SERVERIP:/Volumes/LaCie/ResearchData /ResearchData  nfs     rw,intr,exec    0       0" >> /etc/fstab
 ```
 
 4. Restart the machine and check that `/ResearchData` exists and contains the appropriate files:
