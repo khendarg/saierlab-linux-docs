@@ -74,9 +74,49 @@ $ sync
 
 ### Install software
 
+#### Installing from the Ubuntu software repositories
+
 1. Install the available bioinformatics packages:
 ```
 sudo apt-get install clustalx clustalo ncbi-blast+ python-biopython python3-biopython fastaq pymol jmol jmol-applet emboss libccp4c0 libccp4-dev
 ```
+
+#### Installing HMMTOP
+
+1. Request a license at [the HMMTOP site](http://hmmtop.enzim.hu/?m=license)
+
+2. Wait for the license and source to arrive
+
+3. Download the source
+
+4. Extract the source:
+```
+$ tar xzf hmmtop\_2.1.tgz
+$ cd hmmtop\_2.1
+```
+
+5. Compile hmmtop:
+```
+$ gcc -o hmmtop hmmtop.c -lm
+```
+
+6. Install hmmtop:
+```
+# cp hmmtop hmmtop.arch hmmtop.psv /usr/local/bin/
+```
+
+7. (Optional) Install the documentation
+
+#### Installing BLAST databases
+
+1. Run `update_blastdb` for BLAST databases of interest (e.g. taxdb, nr, swissprot, pdbaa)
+```
+update_blastdb taxdb
+update_blastdb pdbaa
+update_blastdb swissprot
+update_blastdb nr
+```
+
+#### Installing Biotools
 
 Copyleft Kevin J. Hendargo 2017. All rights reversed.
