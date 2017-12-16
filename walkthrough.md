@@ -7,12 +7,12 @@ Initial setup
 ### Getting ResearchData mounted
 
 1. Install nfs-common: 
-```bash
+```
 # apt-get install nfs-common
 ```
 
 1. Make `/ResearchData`:
-```bash
+```
 # mkdir /ResearchData
 ```
 
