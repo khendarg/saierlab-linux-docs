@@ -17,10 +17,14 @@ Initial setup
 ```
 
 3. Add the following line to `/etc/fstab`:
-```fstab
-132.239.144.57:/Volumes/LaCie/ResearchData /ResearchData  nfs     rw,intr,exec    0       0
+```
+# echo "132.239.144.57:/Volumes/LaCie/ResearchData /ResearchData  nfs     rw,intr,exec    0       0" >> /etc/fstab
 ```
 
-4. Restart the machine and 
+4. Restart the machine and check that `/ResearchData` exists and contains the appropriate files:
+```
+# ls /ResearchData
+<list of files>
+```
 
 Copyleft Kevin J. Hendargo 2017. All rights reversed.
