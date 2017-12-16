@@ -44,6 +44,11 @@ $ sync
 # mkdir /usr/local/BlastDB
 ```
 
+2. Make `/ResearchData`:
+```
+# mkdir /ResearchData
+```
+
 ### Mount ResearchData
 
 1. Install nfs-common: 
