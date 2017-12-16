@@ -109,7 +109,7 @@ $ gcc -o hmmtop hmmtop.c -lm
 
 #### Installing BLAST databases
 
-1. Run `update_blastdb` for BLAST databases of interest (e.g. taxdb, nr, swissprot, pdbaa)
+1. Run `update_blastdb` for BLAST databases of interest (e.g. taxdb, nr, swissprot, pdbaa). This may take half a day.
 ```
 update_blastdb taxdb
 update_blastdb pdbaa
@@ -117,6 +117,16 @@ update_blastdb swissprot
 update_blastdb nr
 ```
 
+2. Compare checksums for all of the downloaded archives
+
+3. Extract all of the archives into the central blastdb directory
+```
+$ cd /usr/local/BlastDB
+# for f in `ls *.gz`; do echo 'Extracting $f'; tar xzf $f; done
+```
+
 #### Installing Biotools
+
+1. Do something
 
 Copyleft Kevin J. Hendargo 2017. All rights reversed.
