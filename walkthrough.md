@@ -129,4 +129,26 @@ $ cd /usr/local/BlastDB
 
 1. Do something
 
+### Maintenance
+
+#### Updates
+
+1. Periodically refresh the apt repositories
+```
+# apt-get update
+```
+
+2. Upgrade packages
+```
+# apt-get upgrade
+```
+
+#### Upgrading to a new release
+
+1. Refresh repositories and upgrade to the next release
+```
+# apt-get update
+# do-release-upgrade
+```
+
 Copyleft Kevin J. Hendargo 2017. All rights reversed.
