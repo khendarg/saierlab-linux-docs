@@ -4,7 +4,14 @@ Care and feeding of Saier Lab Ubuntu PCs
 Initial setup
 -------------
 
-### Getting ResearchData mounted
+### Setting up crucial directories
+
+1. Make `/usr/local/BlastDB`:
+```
+# mkdir /usr/local/BlastDB
+```
+
+### Mount ResearchData
 
 1. Install nfs-common: 
 ```
@@ -25,6 +32,13 @@ Initial setup
 ```
 # ls /ResearchData
 <list of files>
+```
+
+### Install software
+
+1. Install the available bioinformatics packages:
+```
+sudo apt-get install clustalx clustalo ncbi-blast+ python-biopython python3-biopython fastaq pymol jmol jmol-applet emboss libccp4c0 libccp4-dev
 ```
 
 Copyleft Kevin J. Hendargo 2017. All rights reversed.
