@@ -11,16 +11,16 @@ Initial setup
 # apt-get install nfs-common
 ```
 
-1. Make `/ResearchData`:
+2. Make `/ResearchData`:
 ```
 # mkdir /ResearchData
 ```
 
-1. Add the following line to `/etc/fstab`:
+3. Add the following line to `/etc/fstab`:
 ```fstab
 132.239.144.57:/Volumes/LaCie/ResearchData /ResearchData  nfs     rw,intr,exec    0       0
 ```
 
-1. Restart the machine and 
+4. Restart the machine and 
 
 Copyleft Kevin J. Hendargo 2017. All rights reversed.
